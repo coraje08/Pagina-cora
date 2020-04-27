@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+</head>
+
+<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	
+
+	}
+	#sidebar{
+		position: fixed;
+		width: 200px;
+		height: 100%;
+		text-align: center;
+		padding: 15px;
+		background: rgba(0, 0, 0, 0.3444);
+		left: -200px;
+		transition: all 400ms linear;
+
+	}
+	#sidebar.active{
+		left: 0px;
+	}
+	#sidebar ul li{
+		color: white;
+		list-style: none;
+		/*		background: rgba(0, 0, 0, 0.3444);	*/
+		padding: 15px 10px;
+		border-bottom: 1px solid rgba(100,100,100,0.3);
+	}
+	#sidebar .toggle-btn{
+		position:   absolute;
+		left: 230px;
+		top: 20px;
+	}
+	#sidebar .toggle-btn span{
+		display: block;
+		width: 30px;
+
+		height: 5px;
+		background-color: black;
+		margin: 5px 0px;
+	}
+</style>
+<script type="text/javascript">
+	function toggleSidebar(){
+		document.getElementById("sidebar").classList.toggle('active');
+	}
+</script>
+<body>
+
+
+
+	<div id="sidebar">
+		<div class="toggle-btn" onclick="toggleSidebar()" >
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<p>Menu</p>
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
